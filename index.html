@@ -1,36 +1,195 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DPW II - ITPM 2026</title>
-    <style>
-        :root { --primary: #2563eb; --dark: #1e293b; --bg: #f8fafc; }
-        body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-        .card { background: white; width: 90%; max-width: 800px; padding: 2rem; border-radius: 1rem; shadow: 0 10px 15px -3px rgba(0,0,0,0.1); border-left: 8px solid var(--primary); }
-        h1 { color: var(--dark); margin-top: 0; }
-        .badge { background: var(--primary); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
-        .box { border: 1px dashed #cbd5e1; padding: 1rem; border-radius: 0.5rem; }
-    </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Mi Sitio </title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+font-family: 'Segoe UI', sans-serif;
+background:#f5f5f5;
+}
+
+/* BARRA SUPERIOR */
+
+.header{
+background:#111;
+color:white;
+padding:18px;
+font-size:20px;
+font-weight:bold;
+}
+
+/* TARJETAS */
+
+.card{
+border:1px solid #dd13cc;
+border-radius:10px;
+padding:20px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* BOTON */
+
+.btn-leer{
+border-radius:20px;
+}
+
+/* TITULO */
+
+.titulo{
+text-align:center;
+margin-top:50px;
+}
+
+.titulo h1{
+font-weight:bold;
+font-size:38px;
+}
+
+.titulo p{
+font-size:20px;
+color:#555;
+max-width:700px;
+margin:auto;
+}
+
+/* COLUMNAS */
+
+.columna{
+padding:18px;
+text-align:center;
+border-radius:10px;
+font-weight:bold;
+color:white;
+}
+
+.col1{background:#aae211;}
+.col2{background:#e1f;}
+.col3{background:#10e795;}
+.col4{background:#888;}
+
+</style>
+
 </head>
+
 <body>
-    <div class="card">
-        <span class="badge">Sistemas Informáticos</span>
-        <h1>🌐 Diseño y Programación Web II</h1>
-        <p><strong>Estudiante:</strong> [TU NOMBRE COMPLETO]</p>
-        <hr>
-        <div class="grid">
-            <div class="box">
-                <strong>🔧 Stack Tecnológico:</strong><br>
-                PHP / MySQL / Laravel
-            </div>
-            <div class="box">
-                <strong>📁 Proyecto Final:</strong><br>
-                [Nombre de tu Sistema]
-            </div>
-        </div>
-    </div>
+
+<!-- BARRA SUPERIOR -->
+
+<div class="header">
+Mi Sitio
+</div>
+
+<div class="container mt-5">
+
+<!-- TARJETAS -->
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card">
+
+<h5>Tarjeta 1</h5>
+
+<p>
+Descubre ideas innovadoras que impulsan la creatividad y
+motivan a desarrollar nuevos proyectos. Aquí encontrarás
+contenido inspirador que fomenta el aprendizaje continuo
+y el crecimiento personal.
+</p>
+
+<button class="btn btn-outline-dark btn-leer">Leer más</button>
+
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+
+<h5>Tarjeta 2</h5>
+
+<p>
+La tecnología avanza constantemente y aprender a utilizar
+sus herramientas permite mejorar nuestras habilidades.
+Explora recursos que te ayudarán a comprender mejor el
+mundo digital.
+</p>
+
+<button class="btn btn-outline-dark btn-leer">Leer más</button>
+
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+
+<h5>Tarjeta 3</h5>
+
+<p>
+Compartir conocimiento fortalece la educación y la
+innovación. En este espacio podrás descubrir información
+interesante que te motivará a seguir aprendiendo cada día.
+</p>
+
+<button class="btn btn-outline-dark btn-leer">Leer más</button>
+
+</div>
+</div>
+
+</div>
+
+
+<!-- TITULO CENTRADO -->
+
+<div class="titulo">
+
+<h1>Título Centrado</h1>
+
+<p>
+Este sitio web presenta información organizada de manera
+clara y visualmente agradable. El objetivo es ofrecer un
+espacio donde los usuarios puedan explorar ideas, adquirir
+conocimiento y descubrir nuevas oportunidades de aprendizaje.
+</p>
+
+</div>
+
+
+<!-- COLUMNAS INFERIORES -->
+
+<div class="row mt-5 g-4">
+
+<div class="col-md-3">
+<div class="columna col1">Innovación</div>
+</div>
+
+<div class="col-md-3">
+<div class="columna col2">Ideas Creativas</div>
+</div>
+
+<div class="col-md-3">
+<div class="columna col3">Tecnología</div>
+</div>
+
+<div class="col-md-3">
+<div class="columna col4">Comunidad</div>
+</div>
+
+</div>
+
+</div>
+
 </body>
 </html>
